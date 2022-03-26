@@ -1,7 +1,8 @@
-{{title}}
-<div>В корзине {{inCart}} шт.</div>
+<div class="header">
+  <input [(ngModel)] = "valueInput" type="text" placeholder="text">
+  <app-button [text] = "'asdsads'" (click)="addInputValue()"></app-button>
+  
+</div>
+<p *ngFor="let elem of arrayInputs">{{elem}}</p>
 
-<app-button text="Добавить в корзину" (click)="addToCart()"></app-button>
-<app-button text="Удалить из корзины" (click)="removeToCart()"></app-button>
 
-{{apiUrl}}

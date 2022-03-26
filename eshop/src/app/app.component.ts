@@ -4,17 +4,17 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'eshop';
   inCart = 0;
-  apiUrl = `${environment.api}`
-
-  addToCart(){
-    this.inCart ++
-  };
-  removeToCart() {
-    return this.inCart > 0 ? this.inCart -- : this.inCart -= 0
+  valueInput = '';
+  arrayInputs: string[] = [];
+  apiUrl = `${environment.api}`;
+  addInputValue() {
+    this.arrayInputs.push(this.valueInput);
+    console.log(this.arrayInputs);
+    this.valueInput = ''
   }
 }
