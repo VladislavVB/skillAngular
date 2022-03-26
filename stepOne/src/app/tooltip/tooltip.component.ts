@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tooltip',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tooltip.component.scss']
 })
 export class TooltipComponent implements OnInit {
-
+  @Input() text = "Text tooltip"
   constructor() { }
 
   ngOnInit(): void {
