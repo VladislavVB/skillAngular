@@ -3,12 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-bage',
   template: `
-    <p>
-      bage works!
-    </p>
+    <div class="bage-banner">Скидка -17%</div>
   `,
-  styles: [
-  ]
+  styleUrls: ['./bage.component.scss']
 })
 export class BageComponent implements OnInit {
 

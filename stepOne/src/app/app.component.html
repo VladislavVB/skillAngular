@@ -1,4 +1,3 @@
-{{title}}
-<app-button text="Knopka"></app-button>
+<app-foo (sayHi)="onSayHi()" [title]="expretion ? 'one' : 'two'"></app-foo>
 
-<app-tooltip-box></app-tooltip-box>
+<button (click)="expretion = !expretion">{{!expretion ? 'one' : 'two'}}</button>

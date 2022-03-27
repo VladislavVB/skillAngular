@@ -1,4 +1,10 @@
-.card-box {
-  border: 1px solid #000;
-  padding: 10px;
+.card {
+  background: #ffffff;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.04),
+    0px 6px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 24px 36px;
+  display: flex;
+  width: 320px;
+  flex-direction: column;
 }

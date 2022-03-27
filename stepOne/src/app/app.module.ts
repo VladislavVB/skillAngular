@@ -2,14 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ButtonModule } from './button/button.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TooltipBoxModule } from './tooltip-box/tooltip-box.module';
+import { FooComponent } from './components/foo/foo.component';
 
 
 @NgModule({
-  declarations: [AppComponent ],
-  imports: [BrowserModule, ButtonModule, BrowserAnimationsModule, TooltipBoxModule],
+  declarations: [AppComponent, FooComponent ],
+  imports: [BrowserModule,],
   providers: [],
   bootstrap: [AppComponent],
 })
